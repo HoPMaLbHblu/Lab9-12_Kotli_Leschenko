@@ -30,4 +30,16 @@ fun main() {
 
     val task4 = task1.copy(priority = Priority.LOW, isCompleted = true)
     println("\nСкопированная задача с изменениями: $task4")
+
+    // Задание 4
+    println("\n=== Отделы ===")
+    val devDept = DevelopmentDepartment()
+    val testDept = TestingDepartment()
+
+    println("Название: ${devDept.departmentName}")
+    devDept.printDepartmentGoal()
+
+    println("\nНазвание: ${testDept.departmentName}")
+    testDept.printDepartmentGoal()
+
 }
